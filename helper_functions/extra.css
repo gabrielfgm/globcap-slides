@@ -1,0 +1,53 @@
+<style type="text/css">
+.white { color: white; }
+.red { color: red; }
+.black { color: black; }
+.large { font-size: 130% }
+.Large { font-size: 150% }
+.small { font-size: 70% }
+.Small { font-size: 50% }
+.pull-right30{ 
+  float: right;
+  width: 30%;}
+.pull-left30{
+  float: left;
+  width: 30%;
+}
+.pull-right40{ 
+  float: right;
+  width: 40%;}
+.pull-left40{
+  float: left;
+  width: 40%;
+}
+.pull-right60{
+  float: right;
+  width: 60%;
+}
+.pull-left60{
+  float: left;
+  width: 60%;
+}
+.pull-right70{
+  float: right;
+  width: 70%;
+}
+.pull-left70{
+  float: left;
+  width: 70%;
+}
+.scale120{
+  float: left;
+  width: 120%;
+}
+.scale80{
+  float: right;
+  width: 80%
+}
+.pull-left-border{
+  float: left;
+  width: 49%;
+  border-right-width: 1px;
+  border-right-style: solid;
+  padding-right: 2px;}
+</style>
