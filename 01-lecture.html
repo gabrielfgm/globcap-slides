@@ -106,6 +106,14 @@ Office Hours: Tues. 11am &amp; Weds. 11am</div>
 ### How was it traded?
 
 ### Market structure
+
++ London has numerous brokers and dealers
+  - Brokers approach market specialists to get going prices
+  - A market supported by intermediaries
++ Amsterdam has 'limit order' market
+  - Brokers have orders at prices
+  - Arrange to settle prices between them
++ Market structure can matter!
 ]
 
 .pull-right[
@@ -286,6 +294,15 @@ class: inverse, center, middle
 
 ## Koudijs data
 
+&gt; "I examine all English securities cross-listed in London and Amsterdam for which frequent price data are available for the Dutch market. This includes three stocks and two government debt issues: the British East India Company (EIC), the Bank of England (BoE), the South Sea Company (SSC), and 3% and 4% annuities" (Koudijs 2016, 1191).
+
++ Important deliniation of time-periods:
+  - 1771-1777
+  - 1783-1787
++ Why?
+  - Needs public information to flow from *LND* to *AMD*
+  - An 'identifying assumption'
+
 ---
 
 class: center, middle
@@ -298,11 +315,19 @@ class: center, middle
 
 ---
 
-## What are the *identifying assumptions*?
-
----
-
 ## The impact of boat arrivals: specification
+
++ Impact of LND on AMS
+
+.Large[
+`\(\Delta p_t^{AMS,boat} = \alpha_0 + \alpha_1 \Delta p_{s-1}^{LND} + \alpha_2 \Delta p_{s-2}^{AMS} + u_t\)`
+]
+
++ Impact of AMS on LND
+
+.Large[
+`\(\Delta p_t^{LND,boat} = \beta_0 + \beta_1 \Delta p_{s-1}^{AMS} + \beta_2 \Delta p_{s-2}^{LND} + v_t\)`
+]
 
 ---
 
@@ -316,21 +341,21 @@ class: center, middle
 
 ## What about when a boat doesn't arrive?
 
-+ Give categories
-+ Skip for reasons of time
++ Think about his explanations here for the tutorials
 
 ---
 
 ## Reflections on learning from Koudijs
 
+.Large[
 + What is the question of *external validity*?
+]
+
+.Large[
 + Does it tell us things about how *efficient* the AMS market was (Neal's goal)?
+]
 
----
 
-## Some broad thoughts on testing market efficiency in the past
-
-+ What is the alternative model?
 
 
   
