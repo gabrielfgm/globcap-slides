@@ -7,6 +7,7 @@ author: |
 date: "Last update: `r format(Sys.time(), '%d %B, %Y')`"
 output: 
   xaringan::moon_reader:
+    chakra: libs/remark-latest.min.js
     nature:
       beforeInit: "helper_functions/macros.js"
       ratio: '16:9'
@@ -18,8 +19,6 @@ output:
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE,
                       message = FALSE, fig.align='center', fig.retina=3,
                       out.width="75%")
-
-source("helper_functions/helper_print_bib.R")
 
 ```
 
@@ -33,5 +32,217 @@ xaringanExtra::use_tile_view()
 
 ## Introduction
 
-+ About me: Dr Gabriel Geisler Mesevage (Gabriel is fine)
-+ Financial/economic historian, mostly 19th c.
+.pull-left[
++ About me
++ About this course in the 2nd semester
+  - What we will cover
+  - Some questions for you
++ About today's lecture
+  - Situating the topic
+  - Situating my approach
+]
+
+.pull-right[
+--------------------------
+.Large[**Office Hours**:]
++ Tuesday 11am (S8.23) & Wednesday 11am (Teams)
++ Contact: gabriel.mesevage@kcl.ac.uk
+--------------------------
+]
+
+---
+
+## Situating this topic
+
++ Moving into a period of more data-rich economic history
+  - Data availability has drawn more cliometricians 
+  - More interest in *testing economic theory* in addition to *explaining what happened*
+  
++ Integration, connections, arbitrage
+  - We are focusing today in particular on integration and connections between London and Amsterdam
+  - Foreshadows many 19th and 20th c. topics
+  
+---
+
+## Some historical background
+
+---
+
+## What was traded?
+
+.pull-left[
+### EIC
+
+### SSC
+]
+
+.pull-right[
+### BoE
+
+### Annuities
+]
+
+---
+
+## How was it traded?
+
+.pull-left[
+### Market structure
+]
+
+.pull-right[
+### Instruments
+]
+
+---
+
+## What are our sources?
+
+### Price lists
+
+### Business press
+
+---
+
+## Studying integration
+
++ Neal's approach
+
+---
+
+## Why start by testing if returns are predictable?
+
++ predictability and the EMH
++ Forms of the EMH
++ EMH with irrational traders
+
+---
+
+## EMH and 'making money'
+
++ Difficulty of financial test of returns to bearing risk
+
+---
+
+## Neal's approach
+
+### What is an ARMA(p,q)?
+
+---
+
+## Neal's appraoch: data
+
+---
+
+## Neal's approach: findings
+
+.center[
+![:scale 70%](figures/neal-tab2.png)
+]
+
+---
+
+## Neal's approach: explaining anomalies
+
+.left-column[
++ Spot vs future prices can account for price predictability
+]
+
+.right-column[
+.center[
+![:scale 70%](figures/neal-fig1.png)
+]]
+
+---
+
+### Does this explain differences in prices?
+
+.center[
+![:scale 80%](figures/neal-tab4.png)
+]
+
+---
+
+## What do we learn about integration?
+
++ Is this a good test of *efficiency*?
+
++ Is this a good test of integration?
+
+---
+
+## What does the period tell us about financial markets?
+
++ Think of this as some of the framing for Koudijs
+
+---
+
+## Boats and decomposing return variance
+
+.pull-left[
+
+> (1) the arrival of public news and (2) the impact of the trading process, which can capture privately informed trading, liquidity trades or shifts in investor sentiment (Koudijs 2016, p. 1185).
+]
+
+.pull-right[
+### Sources of variance
+
+1. Public news
+2. The trading process
+  1. private information 
+  2. liquidity trades
+  3. investor sentiment
+]
+
+---
+
+## Koudijs data
+
+---
+
+class: center, middle
+
+## What is the *mechanism*?
+
+.center[
+![:scale 90%](figures/koudijs-fig2.png)
+]
+
+---
+
+## What are the *identifying assumptions*?
+
+---
+
+## The impact of boat arrivals: specification
+
+---
+
+class: center, middle
+
+## The impact of boat arrivals: results
+
+![:scale 90%](figures/koudijs-tab2.png)
+
+---
+
+## What about when a boat doesn't arrive?
+
++ Give categories
++ Skip for reasons of time
+
+---
+
+## Reflections on learning from Koudijs
+
++ What is the question of *external validity*?
++ Does it tell us things about how *efficient* the AMS market was (Neal's goal)?
+
+---
+
+## Some broad thoughts on testing market efficiency in the past
+
++ What is the alternative model?
+
+
+  
