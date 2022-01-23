@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Lecture 2: Colonialism and Sovereign Debt</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <script src="libs/xaringanExtra-webcam-0.0.1/webcam.js"></script>
+    <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
+    <link href="libs/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view-0.2.6/tile-view.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="helper_functions/extra.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Lecture 2: Colonialism and Sovereign Debt
+### <div class="line-block">Dr. Gabriel Geisler Mesevage<br />
+<a href="mailto:gabriel.mesevage@kcl.ac.uk"
+class="email">gabriel.mesevage@kcl.ac.uk</a><br />
+Office Hours: Tues. 11am &amp; Weds. 11am</div>
+### Last update: 23 January, 2022
+
+---
+
+
+
+
+
+
+
+## Introduction
+
+.Large[### Today's Plan
+
++ Colonialism and Sovereign Debt: framing the problem
+  + The return to institutions
+  + Measuring institutions
+  + Institutions in cross-country regressions
++ Colonialism and sovereign debt reconsidered
+  + Accominotti et al
+  + Gardner
+]
+
+---
+
+## Colonies, Institutions and Growth
+
++ A resurgent literature on institutions and growth since the 1990s/200s
+  - Key contributions by Acemoglu et al take colonies as a source of variation in institutional form
+  - Disease burden `\(\rightarrow\)` type of colony `\(\rightarrow\)` type of institution `\(\rightarrow\)` growth
+  
++ Led to broader study of *effects of colonialism* on growth
+  - Obstfeld &amp; Taylor (2003): Empire itself does little, gold standard is what matters
+  - Ferguson and Schularick (2006): Empire lowers borrowing costs
+
+### Is this a 'benefit' of empire?
+
+&gt; "apologists for Europe's imperial record over this period" &lt;br&gt; - (O'Brien 2006)
+
+---
+
+## An older literature on costs of empire
+
+.pull-left40[
+#### Davis and Huttenback, *Mammon and the Pursuit of Empire*
+
+![:scale 60%](figures/mammon_frontis.jpg)
+]
+
+.pull-right60[
++ The strong case for the economic irrationality of empire
+    - Compute costs and revenues
+    - Revenues go to narrow elite
+    - Costs fall on the public
+        + costs of defence, administration, infrastructure, opportunity costs
+    - 'Winners' are specific elites and settler colony emigres
+    - 'Losers' are the British taxpayer and (obviously) the colonized
+    
+&gt; "... if I invest either in the public funds or in some private industrial venture in a foreign country for the benefit of my private purse, getting specially favorable terms to cover risks arising from the political insecurity of the country or the deficiencies of its Government, I am entitled to call upon my Government to use its political and military force to secure those very risks which I have already discounted in the terms of my investment. Can anything be more palpably unfair?" &lt;br&gt; —Hobson, 1902, p. 358.
+]
+
+---
+
+## Empire's winners and losers
+
+.center.Large[
+
+&gt; "The technology of the imperial machine ... involved some transfer of resources to the colonies; however, it is not obvious that either India or **the dependent colonies** [Ceylon, Jamaica, etc.] would have chosen to accept the imperial subsidy had they been given the opportunity to object ... **The colonies with responsible government** [Canada, Australia...] were clear winners; India and the dependent Empire, probably, were losers. ... The value of those benefits was high in the colonies of white settlement ... For the remainder of the Empire, the returns are less obvious ... For India and the dependent colonies one cannot rule out the conclusion that everyone (Briton and Indian) lost – a true Pareto pessimum." &lt;br&gt; - Davis and Huttenback quoted in Accominatti et al. 2009 fn. 5.
+
+]
+
+---
+
+## The econometrics of empire
+
++ How to measure the average impact of empire on borrowing costs?
+
+$$
+Spread_{ct} = \alpha + \beta_1 Int/rev_{ct} + \beta_2 BudgBal/rev_{ct} + \beta_3 ln(Ex./pop) + Default_{ct} + Prev.Default_{ct} + C_c + T_t + \epsilon_{ct}
+$$
++ The dummy variable parameters `\(C_c\)` are the increase/decrease in borrowing costs associated with each country `\(c\)`
++ They fall in two groups `\(C_c \in \{Colony, Sovereign\}\)`
++ Test whether `\(\bar{C}_{Colony} &lt; \bar{C}_{Sovereign}\)` where `\(\bar{X}\)` means the average of `\(X\)`.
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="libs/remark-latest.min.js"></script>
+<script src="helper_functions/macros.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
