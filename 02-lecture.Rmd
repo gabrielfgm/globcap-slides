@@ -98,10 +98,116 @@ xaringanExtra::use_tile_view()
 
 + How to measure the average impact of empire on borrowing costs?
 
-$$
-Spread_{ct} = \alpha + \beta_1 Int/rev_{ct} + \beta_2 BudgBal/rev_{ct} + \beta_3 ln(Ex./pop) + Default_{ct} + Prev.Default_{ct} + C_c + T_t + \epsilon_{ct}
-$$
-+ The dummy variable parameters $C_c$ are the increase/decrease in borrowing costs associated with each country $c$
-+ They fall in two groups $C_c \in \{Colony, Sovereign\}$
-+ Test whether $\bar{C}_{Colony} < \bar{C}_{Sovereign}$ where $\bar{X}$ means the average of $X$.
+$Spread_{ct} = \beta_1 Int_{ct} + \beta_2 Budg_{ct} + \beta_3 Trade + \beta_4 Default_{ct} + \beta_5 Prev.Default_{ct} + C_c + T_t + \epsilon_{ct}$
 
++ $Spread_{ct}$ is the difference between the bond yield of country $c$ and UK consols at time $t$
+  - consols are here considered the 'risk-free rate'. The Spread will in general always be positive as everyone pays more to borrow than UK gov
++ The parameters $C_c$ are the average increase/decrease in borrowing costs associated with each country $c$
+  - If $C_c$ is **negative** then Spreads are lower for country $c$
+  
+.pull-left[
+#### Testing for the empire effect
+
++ Countries fall in two groups $C_c \in \{Colony, Sovereign\}$
++ If $\bar{C}_{Colony} < \bar{C}_{Sovereign}$ where $\bar{X}$ means the average of $X$ than on average colonies borrow at lower rates
+  - Why not include a variable for colony?
+  
+]
+
+.pull-right[
+|Country | Year | Colony
+|-------------------------
+|India | 1900 | 1
+|India | 1901 | 1
+| ... | ... | ...
+|France | 1900 | 0
+|France | 1900 | 0
+  ]
+
+---
+
+## The econometrics of empire
+
+.pull-left[
+![:scale 100%](figures/ferguson-schularick-table3-i.png)
+]
+
+.pull-right[
+![:scale 100%](figures/ferguson-schularick-table3-ii.png)
+
++ Ferguson & Schularick, p. 299 table 3.
++ Colonies borrow ~1.5% cheaper than sovereigns!
+]
+
+---
+
+.pull-left[
+## The econometrics of empire
+
+### But the result is unstable!
+
++ Obstfeld & Taylor ran a similar regression and got a different result
++ Ferguson and Schularick suggest their sample is larger
+  - But many reasons for unstable result, most of them frustrating:
+    + Measurement error, omitted-variable bias, **mispecification**...
+
+]
+
+.pull-right[
+![:scale 100%](figures/obstfeld-taylor-table1.png)
+]
+
+---
+
+## How did investors think about country risk?
+
+![:scale 100%](figures/accominotti-et-al-frontis.png)
+
++ Argue most of the econometric approaches have been **mispecified** because the pricing model is different for **colonies** versus **sovereigns**.
++ **sovereigns** have a probability of default that sharply increases as their revenues fall, trade falls, etc.
++ But **colonies** are implicitly/explicitly guaranteed by colonizer. They don't have the **same** kind of default risk. Spreads represent some little risks of default + other issues like liquidity
+
+---
+
+.left-column[
+## Example
+
++ Colonies less sensitive to debt burden than sovereigns
++ Logic is that we should run 2 seperate regressions
+
+]
+
+.right-column[
+.center.middle[
+![:scale 95%](figures/accominotti-figure1.png)
+]]
+
+---
+
+## The econometrics of empire re-specified
+
++ Need to think in terms of seperate relationships between spreads and 'fundamentals' for colonies and non-colonies
+
+.pull-left[
++ 1 equation for colonies
+
+$Spread_{ct}^{COL} = \beta_1^{COL} Int_{ct} + \beta_2^{COL} Budg_{ct} + \\ \beta_3^{COL} Trade + \beta_4^{COL} Default_{ct} +\\ \beta_5^{COL} Prev.Default_{ct} + C_c^{COL} + T_t^{COL} + u_{ct}$
+
++ And a seperate equation for sovereigns
+
+$Spread_{ct}^{SOV} = \beta_1^{SOV} Int_{ct} + \beta_2^{SOV} Budg_{ct} +\\ \beta_3^{SOV} Trade + \beta_4^{SOV} Default_{ct} +\\ \beta_5^{SOV} Prev.Default_{ct} + C_c^{SOV} + T_t^{SOV} + v_{ct}$
+
+]
+
+.pull-left[
+![:scale 100%](figures/accominotti-et-al-table3.png)
+]
+
+---
+
+## Econometrics and interpretations
+
+.pull-left[
+
+> "The Empire made the spread paid by subject countries insensitive to their performance because credibility was decided elsewhere. You would not look in India for indications of India's credit. More likely, you would look at Downing Street. The effect of empire was not to provide subjects with a marginal interest rate benefit but to remove the default risk altogether" <br> - Accominotti et al. p. 399
+]
