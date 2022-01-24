@@ -7,7 +7,6 @@ author: |
 date: "Last update: `r format(Sys.time(), '%d %B, %Y')`"
 output: 
   xaringan::moon_reader:
-    chakra: libs/remark-latest.min.js
     nature:
       beforeInit: "helper_functions/macros.js"
       ratio: '16:9'
@@ -126,6 +125,42 @@ $Spread_{ct} = \beta_1 Int_{ct} + \beta_2 Budg_{ct} + \beta_3 Trade + \beta_4 De
 
 ---
 
+.pull-left60[
+### What are we assuming?
+
+Say we want to estimate how the average of $Y$ changes with $X$ in a linear model
+
+$Y_{ct} = \alpha + \beta X_{ct} + \epsilon_{ct}$
+
+The problem is that we do not observe the 'errors' $\epsilon_{ct}$ and they might vary with $X$ and $Y$, 
++ e.g. $Y$ is GDP growth, $X$ is a measure of industrialization, but both are explained by institutions $I$ which we can't measure, and global weather patterns $W$ which we can't measure?
+
++ What if the things we can't measure only vary **either** across countries **or** across time?
+
+$Y_{ct} = \alpha + \beta X_{ct} + I_c + W_t + u_{ct}$
+
+Now if you estimate the average for each country, and you estimate the average for each year, you have removed the effects of $I$ and $W$ **and anything else that varies only by place or time** even though you haven't measured them!
+]
+
+.pull-right40[
+
+### Is this useful?
+
++ For the purposes of measuring $\beta$ we've removed a lot of tricky unobservables
+  - But hardly a silver bullet: anything we didn't measure that changes across space and time is a problem (education, population, soil quality, whatever)
+  
+### What about testing for empire?
+
+The empire test is **using** the country averages it estimates. Imagine:
+
+$Y_{ct} = \alpha + \beta X_{ct} + Empire_c + I_c + W_t + u_{ct}$
+
++ Effect of empire would be **unidentifiable** in this model
+
+]
+
+---
+
 ## The econometrics of empire
 
 .pull-left[
@@ -173,7 +208,7 @@ $Spread_{ct} = \beta_1 Int_{ct} + \beta_2 Budg_{ct} + \beta_3 Trade + \beta_4 De
 ## Example
 
 + Colonies less sensitive to debt burden than sovereigns
-+ Logic is that we should run 2 seperate regressions
++ Logic is that we should run 2 separate regressions
 
 ]
 
@@ -210,4 +245,93 @@ $Spread_{ct}^{SOV} = \beta_1^{SOV} Int_{ct} + \beta_2^{SOV} Budg_{ct} +\\ \beta_
 .pull-left[
 
 > "The Empire made the spread paid by subject countries insensitive to their performance because credibility was decided elsewhere. You would not look in India for indications of India's credit. More likely, you would look at Downing Street. The effect of empire was not to provide subjects with a marginal interest rate benefit but to remove the default risk altogether" <br> - Accominotti et al. p. 399
+]
+
+.pull-right[
+
++ Does not make sense to use the same pricing model for India and Argentina when only one of them is sovereign!
+  - Similar to mixing Alabama and Argentina in a study
++ **If colonies can't default, what limits their borrowing?**
+  - Politics
++ **If colonies don't have default risk, not sensible to think in terms of their macroeconomic policies**
+]
+
+---
+
+## What determines colonial borrowing?
+
+.pull-left[
+
+> "The management of capital outflows within the British Empire was thus tantamount to redistributive policies in federal regimes - if political science is any guide here, the crucial variable for determining the resulting patterns is the degree of devolution." <br> -Accominotti et al. p. 400
+]
+
+.pull-right[
+![:scale 100%](figures/accominotti-et-al-table4.png)
+]
+
++ **White settler colonies** become increasing indebted across later-19th
++ Reflects their greater political leverage within the Empire
+  - Politics is conditioning capacity to borrow
+
+---
+
+### What does this tell us about developmental strategies?
+
+> Our theoretical analysis leads us to predict that **the institutions of self-governing colonies were conducive to heavier government involvement in the process of economic growth than was the case under sovereignty**. We report empirical evidence that is consistent with this. This finding is at odds with the prejudice recently associated with neoconservative writing, that empire is useful because its repressive nature is conducive to financial orthodoxy. ...certain countries such as Australia and New Zealand were pioneers in the development of welfare state institutions. We remark that they belonged to the self-governing empire and suggest that their pioneering of the welfare state was a by-product of the political economy of self-governing colonies, where extensive government involvement in economic development and a deepening of the electoral franchise went hand in hand.
+
+.pull-left[
+![:scale 90%](figures/accominotti-et-al-2009-frontis.png)
+]
+
+.pull-right[
++ Analyzing policies/institutions in isolation from the interests of colonial ruler is problematic
++ Self-governing (white settler e.g. Australia, Canada, etc.) colonies need to be cajoled
+  - Get subsidies, developmental assistance, etc.
++ Dependent colonies (e.g. India, Jamaica, etc.) were coerced
+]
+
+---
+
+### What do case studies suggest?
+
+.center[
+![:scale 80%](figures/gardner-2017-frontis.png)
+]
+
++ Recall the difficulty and ambiguity of the statistical work
++ Garner proposes evaluating debate in context of West African case studies: 
+  - Do investors lend because imperial institutions "made colonies a better credit risk" (p. 236):  Obstfeld & Taylor; Ferguson and Schularick?
+  - Or "not because colonialism improved their fiscal and economic institutions but *because* they were colonies" (p. 400): Accominotti et al
++ Nigeria, Sierra Leone and Gold Coast (colonies) vs Liberia (Independent)
+
+---
+
+## What does Gardner find? History is messy
+
+.pull-left[
+> "At the core of the debate is whether imperial policies improved those fundamentals by enforcing fiscal discipline, or whether the status of the colonies as subsidiaries of the British government explains the low level of spreads for colonial bonds." <br> -Gardner, p. 254
+
++ I read her as largely siding with Accominotti et al.
++ **But** colonials *do* pay a spread above London -- where does it come from?
+  - Gardner suggests some real investor fears about revenue/default
+  - Chavaz and Flandreau (2017, *Journal of Economic History*) argue it is liquidity
+  - (could be both)
+]
+
+.pull-right[
+> "The experience of West African colonies suggests a more nuanced approach is needed to this debate, which allows for the fact that investors did appear to differentiate between colonial bonds. A wide range of imperial interventions, which included not only the Crown Agents but also the British government itself, contributed to allowing West African colonies to borrow on comparatively good terms even relative to other British colonies. Such interventions served the purposes of various interests within the British Empire and need not necessarily be attributed to benevolence. <br> -Gardner, p. 254
+]
+
+---
+
+## Concluding: some things to consider
+
+.Large[
++ What should we make of the inverse relationship between 'fiscal orthodoxy' and growth?
++ How much stock should we put in cross-country regressions?
++ Empire functioned to subsize some colonies and not others
+  - How should this figure in our accounts of growth?
+  - How problematic is this for accounts grounded in *good* vs *bad* institutions?
++ What does this tell us about the *origins* of institutional forms in the 19th century?
++ What can sovereign borrowing costs tell us about interesting questions in econ history/political economy?
 ]
