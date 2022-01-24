@@ -54,6 +54,8 @@ xaringanExtra::use_tile_view()
 + Led to broader study of *effects of colonialism* on growth
   - Obstfeld & Taylor (2003): Empire itself does little, gold standard is what matters
   - Ferguson and Schularick (2006): Empire lowers borrowing costs
+    + Imposes 'fiscal orthodoxy' onto imperial subjects
+    + This potentially includes broad set of imperial institutions (e.g. gold standard, free trade)
 
 ### Is this a 'benefit' of empire?
 
@@ -61,7 +63,7 @@ xaringanExtra::use_tile_view()
 
 ---
 
-## An older literature on costs of empire
+### An older literature on costs of empire
 
 .pull-left40[
 #### Davis and Huttenback, *Mammon and the Pursuit of Empire*
@@ -73,8 +75,7 @@ xaringanExtra::use_tile_view()
 + The strong case for the economic irrationality of empire
     - Compute costs and revenues
     - Revenues go to narrow elite
-    - Costs fall on the public
-        + costs of defence, administration, infrastructure, opportunity costs
+    - Costs fall on the public: defense, administration, infrastructure, opportunity costs
     - 'Winners' are specific elites and settler colony emigres
     - 'Losers' are the British taxpayer and (obviously) the colonized
     
