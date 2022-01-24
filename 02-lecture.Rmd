@@ -94,7 +94,7 @@ xaringanExtra::use_tile_view()
 
 ---
 
-## The econometrics of empire
+## The econometrics of empire: the conventional approach
 
 + How to measure the average impact of empire on borrowing costs?
 
