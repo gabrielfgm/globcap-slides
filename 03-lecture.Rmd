@@ -40,10 +40,10 @@ xaringanExtra::use_tile_view()
   + Balance sheet structure
   + Sources of instability
   + Solutions
-+ History
-  + American wild-cat banks
-  + Banking and industrial development
-  + Banks vs stock markets
++ Comparative banking systems
+  + Gerschenkron
+  + Political accounts
+    - US banking in the 19th century
 ]
 
 ---
