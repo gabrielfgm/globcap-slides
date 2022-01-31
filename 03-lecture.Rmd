@@ -94,6 +94,8 @@ xaringanExtra::use_tile_view()
 
 ---
 
+![scale: 100%](figures/grossman-simplified-balancesheet.png)
+
 ---
 
 ## Illiquidity vs Insolvency
