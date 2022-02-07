@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Lecture 4: MONETARY POLICY, CAPITAL FLOWS, AND THE RISE AND FALL OF THE GOLD STANDARD, 1870-1930</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <script src="libs/xaringanExtra-webcam-0.0.1/webcam.js"></script>
+    <script id="xaringanExtra-webcam-options" type="application/json">{"width":"200","height":"200","margin":"1em"}</script>
+    <link href="libs/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
+    <script src="libs/tile-view-0.2.6/tile-view.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="helper_functions/extra.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Lecture 4: MONETARY POLICY, CAPITAL FLOWS, AND THE RISE AND FALL OF
+THE GOLD STANDARD, 1870-1930
+### <div class="line-block">Dr. Gabriel Geisler Mesevage<br />
+<a href="mailto:gabriel.mesevage@kcl.ac.uk"
+class="email">gabriel.mesevage@kcl.ac.uk</a><br />
+Office Hours: Tues. 11am &amp; Weds. 11am</div>
+### Last update: 07 February, 2022
+
+---
+
+
+
+
+
+
+
+## Introduction
+
+.Large[
+
+### Today's Plan
+
++ The Trilemma
++ Testing the trilemma
++ Transitioning out of the trilemma
++ Why was the gold standard stable?
++ Why did the gold standard collapse?
+
+]
+
+---
+
+## Economic globalization over the long-term
+
+.center.Large[
+&gt; "The characterization of economic globalization as a "golden straitjacket" evokes two distinct sets of questions. One can ask how golden the jacket is, or else how strait it is." &lt;br&gt; &amp;mdash;Obstfeld, Shambaugh, Taylor (2005), p. 423
+
+]
+
+.Large[
++ **'Golden'**: the way constraints on economic policy from globalization impact growth
+  - E.g. literature on effects of gold standard adherence
++ **'Strait'**: how binding are these constraints anyway?
+]
+
+
+---
+
+.center[
+![:scale 80%](figures/trilemma.png)
+]
+
+---
+
+## The Trilemma: historical monetary policy regimes
+
+.pull-left[
+.Large[
+Can pick **two** out of:
+
+1. Stable exchange rates
+2. free capital mobility
+3. and flexible domestic monetary policy,
+
+
+]
+]
+
+.pull-right[
+
+### Regimes
+
+.Large[
+1. Classical gold standard (1870s-1914): 1 &amp; 2
+2. Interwar gold standard (1918-1938): *here be dragons...*
+3. Bretton woods (1950s-1973): 1 &amp; 3
+4. Current regime (1970s-present): mostly 2 &amp; 3
+]
+]
+
+---
+
+## The trilemma: *testing* historical monetary policy regimes
+
+.Large[
+
+All the pieces are **hard to measure**.
+
+1. Exchange rate stability is the easiest but still imperfect, e.g. if a currency is **officially** pegged, does it trade at the peg in **practice**?
+2. Capital mobility is difficult to track.
+3. How do we know if domestic monetary policy is being exercised 'flexibly'?
+  + Obstfeld, Shambaugh, Taylor (2005) propose testing **short-run nominal interest rate deviations** from a global benchmark
+  + What if domestic authorities 'flexibly' choose to follow the global benchmark?
+
+]
+
+---
+
+## Testing the trilemma: Interest rates
+
+.Large[
+Call the short-term interest rate of country `\(i\)` at time `\(t\)` `\(R_{it}\)` and the global baseline rate `\(R_{bt}\)`.
+
+Not straight-forward to test the relationship between `\(R_{it}\)` and `\(R_{bt}\)`: interest rates often have high **autocorrelation**. If interest rate levels tend to drift
+in a given direction, this can lead to a case of **spurious regression** &amp;mdash; a common problem when studying time series.]
+
+***
+
+.pull-right[
+For more on spurious regression see:
++ Granger and Newbold, "Spurious regressions in econometrics", *Journal of Econometrics*, Vol. 2, No. 2, 1974.
+]
+
+---
+
+## Testing the trilemma: Specifications
+
+.Large[
+
+Focus on relationship between **changes** in interest rates ( `\(\Delta\)` is often used to symbolize a difference over time)
+
+`\(\Delta R_{it} = \alpha + \beta \Delta R_{bit} + u_{it}\)`
+
+Then consider relationship including an **error-correction term**. Intuition: if the levels of interest rates diverge, how does that effect changes in interest rates?
+
+`\(\Delta R_{it} = \alpha + \beta \Delta R_{bit} + \theta (c + R_{i,t-1} - \gamma R_{bi,t-1}) + u_{it}\)`
+
+]
+
+---
+
+## Results in differences
+
+---
+
+## Results with cointegration
+
+---
+
+## The trilemma in critical perspective
+
++ Rey on how its a dilemma
++ Issues of identifying 'constraints' vs 'common shocks'
+
+---
+
+## From the trilemma to the gold-standard
+
++ A system that adjusted domestic monetary policy rapidly to global conditions
++ British rates are rapidly followed, 
++ Room to maneuvre offered by gold-points/arbitrage costs
+
+### How does it come apart?
+
++ Start with the related question why was pre-WWI GS seemingly stable
+
+---
+
+## Some major interpretations
+
++ Kindleberger, *hegemonic stability*
++ Eichengreen, *credibility &amp; cooperation*
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="helper_functions/macros.js"></script>
+<script>var slideshow = remark.create({
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
