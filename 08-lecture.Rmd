@@ -1,0 +1,297 @@
+---
+title: "Lecture 8: The 2008 Financial Crisis and the Eurozone" 
+author: | 
+    | Dr. Gabriel Geisler Mesevage 
+    | gabriel.mesevage@kcl.ac.uk
+    | Office Hours: Tues. 11am & Weds. 11am
+date: "Last update: `r format(Sys.time(), '%d %B, %Y')`"
+output: 
+  xaringan::moon_reader:
+    nature:
+      beforeInit: "helper_functions/macros.js"
+      ratio: '16:9'
+    lib_dir: libs
+    css: ["xaringan-themer.css", "helper_functions/extra.css"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE,
+                      message = FALSE, fig.align='center', fig.retina=3,
+                      out.width="75%")
+
+```
+
+```{r xaringan-themer, include = FALSE}
+library(xaringanthemer)
+style_solarized_light()
+source("helper_functions/theme_lecture.R")
+xaringanExtra::use_webcam()
+xaringanExtra::use_tile_view()
+```
+
+
+## Introduction
+
+.Large[
+
+### Today's Plan
+
++ The macroeconomic origins of the euro crisis
++ Some additional considerations
++ Some chronology
++ The difficulty of macroeconomic adjustment
++ The politics of adjustment costs
+]
+
+---
+
+.left-column[
+### The Euro and the Crisis of 2008
+
++ The 2008 crisis was bad everywhere
++ But it was especially bad in the euro area
++ Why is this?
+  - Bad policy
+  - Currency areas are bad?
+  - Bad luck?
+]
+
+.right-column[
+![:scale 100%](figures/unemployment-rate.png)
+]
+
+---
+
+## Optimal Currency Areas and the Euro
+
+.Large[Four common tests]
+
+.pull-left[
+### Integration
+
++ Is there lots of goods and capital movement?
+
+### Symmetry
+
++ Do shocks hit at the same time?
+]
+
+.pull-right[
+### Labor Mobility
+
++ Can (do) people move within the currency area?
+
+### Fiscal redistribution
+
++ When there is a localized shock to what extent can resources be transferred from the area as a whole to the affected region?
+]
+
+---
+
+### How close is the euro-area to optimal? The US benchmark
+
+.pull-left[
+
+![:scale 100%](figures/orourke-taylor-cross-fig2-a.png)
+#### O'Rourke & Taylor (2013)
+]
+
+.pull-right[
+![:scale 100%](figures/orourke-taylor-cross-fig2-b.png)
+]
+
++ EU is not particularly close to US-levels of integration
++ Although maybe shocks are about equally symmetric (hard to measure)
+  - And also asymmetry might matter less with fiscal transfer
++ Clearly roughly zero fiscal transfers by design 
+
+---
+
+## The US-benchmark continued: a single monetary policy
+
+.pull-left[
+![:scale 100%](figures/orourke-taylor-cross-fig3-a.png)
+#### O'Rourke & Taylor (2013)
+
+]
+
+.pull-right[
+![:scale 100%](figures/orourke-taylor-cross-fig3-b.png)
+]
+
+
+
+---
+
+## Europe after the euro: a brief macroeconomic account
+
+![:scale 100%](figures/gibson-et-al-figure-1.png)
+
+> "Under a well-functioning fixed-exchange-rate regime (and in the absence of a fiscal-transfer mechanism), **such large and sustained external deficits are not expected to occur**. For example, under the classical gold standard of the late-19th and early 20th centuries, countries that experienced current-account deficits would typically experience gold outflows, and, with money and credit growth tied to gold, lower money and credit growth. The lower money and credit growth would cause prices and wages to fall ... helping to restore competitiveness, thus eliminating the external deficits. The appreciation of the real exchange rate would help eliminate the current-account surpluses." <br>&mdash;Gibson et. al. (2014)
+
+---
+
+## The consequences of imbalances
+
+![:scale 100%](figures/gibson-et-al-figure-2.png)
+
++ Flows relax pressure for reform by relaxing budget constraints
++ FLows misprice sovereigns
+  - Bid up asset prices
++ Flows increase local prices -- local inflation in non-traded goods sector
+  - This spills to traded goods sector hurting competitiveness
++ Growing inflation **lowers** real interest rate incentivizing further borrowing
+
+---
+
+.pull-left[
+## What explains the flows?
+
++ The macro story describes the loss of competitiveness
++ Why capital keeps flowing to places with falling productivity is not totally sensible
++ Could be explained by beliefs about ECB insuring against risk
+  - Maybe investors assuming euro-area won't let a sovereign default?
+
+]
+.pull-right[
+
+![:scale 100%](figures/yields-plots.png)
+]
+
+---
+
+.pull-left[
+## Other mechanisms
+
+#### Flows and misallocation
+
+![:scale 100%](figures/brunnermeier-reis-misallocation.png)
+]
+
+.pull-right[
+#### Shadow-banking 
+
+.center[
+![:scale 100%](figures/brunnermeier-reis-shadowbanking.png)
+]
+
+#### The rise of systemic risk
+
+.center[
+![:scale 70%](figures/brunnermeier-reis-systemicrisk.png)
+]]
+
+---
+
+## Accelerants: The doom loop
+
+.pull-left[
+![:scale 100%](figures/brunnermeier-reis-doom-loop.png)
+#### Brunnermeier & Reis (2019)
+]
+
+--
+
+.pull-right[
+
+![:scale 100%](figures/brunnermeier-reis-sovereign-and-cds-spreads.png)
++ The link between sovereigns and banks remains unresolved
+]
+
+---
+
+.left-column[
+### Accelerants: The flight to safety
+
++ In the shock of crisis investors looked for *safety*: assets likely to be close substitutes for cash
++ Sold peripheral sovereigns to buy core sovereigns driving divergence
+]
+
+.right-column.center[
+![:scale 90%](figures/brunnermeier-reis-10-year-yields.png)
+]
+
+---
+
+.pull-left[
+## The coming of crisis
+
++ Greek revelations of real deficit in late-2009 catalyst
++ But Greece is anomalous in some ways -- in most places there is build-up of **private** sector debts
+  - Ill-conceived bailouts shift this to public sector
+  - This includes some well-intended fiscal stimulus e.g. Spain is generous, Germany is stingy
+  
+> "The Hellenic motif inspired the belief that Southern European governments were profligate. It played into the German presumption that, whatever the circumstances, belt tightening was appropriate."<br>&mdash;Eichengreen p. 352
+]
+
+.pull-right[
+## Greece and the rest
+
++ Rescue package in 2010
+
+> "...an upfront debt restructuring would have been better for Greece although this was not acceptable to the euro partners." <br>&mdash;IMF (2013)
+
++ Political backlash to bailing out the financial institutions (French/German/UK banks)
+  - In October 2010 Merkel/Sarkozy suggest in future bondholders will have to take hair-cut
+  - Now other sovereign spreads spike
+  
+> "You're going to destroy the euro!" <br>&mdash;Trichet on hearing of Franco-German announcement
+]
+---
+
+.pull-left[
+## Euro area austerity
+
+### The crisis as a 'sudden stop'
+
++ Given large deficits in places, the reversal of capital flows imply austerity without additional financing
++ Because european countries do not borrow in their own currency national governments cannot finance Keynesian projects
++ Most contract
++ European central banks cannot soften contraction through monetary loosening
+]
+
+--
+
+.pull-right[
+
+### Austerity ideas?
+
++ But austerity much more wide-spread e.g. Germany too
++ Ideas like "expansionary austerity" come into vogue
++ Net public spending cut in eurozone of roughly 1.5% of GDP
+
+> "Work by the IMF’s Olivier Blanchard ... implied that these public spending cuts chopped as much as 2 percentage points off Eurozone growth in 2011 and 3 percentage points in 2012. Thus, the slowdown from 2.0 percent in 2010 to 1.5 percent in 2011 and −0.6 per cent in 2012 was entirely man-made." <br>&mdash;Eichengreen p. 352
+]
+
+---
+
+.left-column[
+### The difficulty of fiscal contraction
+
+1. debt deflation: as you push down local income ratio of debt/income grows
+2. fiscal multipliers: as government slashes expenditure, gdp falls. Austerity definitely not expansionary.
+]
+
+.right-column[
+![:scale 50%](figures/papadimitriou-et-al-fig-4.png)![:scale 50%](figures/papadimitriou-et-al-fig-8.png)
+
++ Official sector **massively** under-estimated the impact of austerity on growth
++ Achieving competitiveness through internal devaluation is very hard when your trading partners are **also** being austere.
+  - The higher euro area inflation the less you need to push your prices down!
+]
+
+---
+
+.pull-left[
+### The difficult politics of austerity
+
++ It is hard to push down wages and prices:
+  - People don't like their nominal income to fall!
+  - Eurozone citizen satisfaction polling falls. Governments voted out, radical parties gain seats.
+
+> "Once the crisis hit, it immediately dissolved ... into bitter conflicts over how the burden of adjusting to the ... current account imbalances would be distributed ...The pure economics of such circumstances is clear: The "asymmetry of the adjustment burden" means that in crisis, deficit countries have no choice but to adjust, whereas surplus countries are under no such pressure." <br>&mdash;Copelovitch et al. p. 822
+]
+
+.pull-right[
+![:scale 100%](figures/orourke-taylor-cross-fig1.png)
+]
