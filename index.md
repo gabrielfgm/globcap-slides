@@ -10,4 +10,3 @@
 + [Lecture 8](08-lecture.html)
 + [Lecture 9](09-lecture.html)
 + [Lecture 10: CANCELLED FOR STRIKE]
-+ 
